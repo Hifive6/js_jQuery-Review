@@ -12,5 +12,5 @@ $('.rollover').hover(function(){
 },
 function(){
     let self = this;
-    $(self).text($(self).data('randomWord'))
+    console.log($(self).text($(self).data('randomWord')))
 })
