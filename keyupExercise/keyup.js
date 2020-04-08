@@ -4,8 +4,9 @@
         // console.log(event);
         var inputText = document.querySelector("input[name='upKey']").value;
         
-        console.log(myDiv);
-        var appendToDiv = document.querySelector('#id')
+        // console.log(myDiv);
+        var appendToDiv = document.querySelector('#placeHere')
+        appendToDiv.append(inputText);
         
     })
 
