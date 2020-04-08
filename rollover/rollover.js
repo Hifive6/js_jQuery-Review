@@ -14,3 +14,14 @@ function(){
     let self = this;
     console.log($(self).text($(self).data('randomWord')))
 })
+
+// $('.rollover').hover(function(){
+//      a = this;
+//      $(a).text('Over');
+//     // $(self).text("over");
+// },
+// function(){
+//     var b = this;
+    
+//     $(b).text('somethingelse');
+// })
