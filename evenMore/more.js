@@ -72,6 +72,7 @@ function addOrMultiply(){
         // console.log(n)
         total = n * (n+1) / 2;
         console.log(total);
+        document.getElementById('placeName').innerHTML = 'Your total is ' + total;
     })
 // } else if(multiplyBtn){
     multiplyBtn.addEventListener('click', function(){
@@ -80,6 +81,7 @@ function addOrMultiply(){
         let total = 1;
         for (let i = 1; i <= m; i++){
             total *= i;
+            document.getElementById('placeName').innerHTML = 'Your total is ' + total;
             console.log(total);
         }
     })
