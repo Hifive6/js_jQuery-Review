@@ -40,19 +40,25 @@ document.querySelector('#personName').addEventListener('click', function(){
     //  console.log(n);
      let interger = (Number(n))
      let sum = 0;
-     for (let i=1; i<=interger; i++){
-        // console.log(i);
-        sum += i;
-        // sum += interger[i]
-        console.log(sum)
+     for (let i=0; i<=interger; i++){
+        //  console.log(i);
+         if((i % 3 === 0) || (i % 5 === 0)){
+
+            sum += i;
+            // sum += interger[i]
+            console.log(sum)
+        }
+        //  let sum = Number(n) + 2;
+        // let sum = Number(n) * (Number(n)+1) / 2;
+        // if ((sum%3) || (sum%5)){
+        //     console.log(sum);
+        //     return sum;
+
+        } 
     }
-    //  let sum = Number(n) + 2;
-    // return sum;
-    // let sum = Number(n) * (Number(n)+1) / 2;
-    //     console.log(sum);
         
 
-    })
+    )
 
 
 
