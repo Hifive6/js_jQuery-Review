@@ -35,30 +35,54 @@
 // greetUser();
 
 
-document.querySelector('#personName').addEventListener('click', function(){
-    let n = document.querySelector('#inputName').value;
-    //  console.log(n);
-     let interger = (Number(n))
-     let sum = 0;
-     for (let i=0; i<=interger; i++){
-        //  console.log(i);
-         if((i % 3 === 0) || (i % 5 === 0)){
+// document.querySelector('#personName').addEventListener('click', function(){
+//     let n = document.querySelector('#inputName').value;
+//     //  console.log(n);
+//      let interger = (Number(n))
+//      let sum = 0;
+//      for (let i=0; i<=interger; i++){
+//         //  console.log(i);
+//          if((i % 3 === 0) || (i % 5 === 0)){
 
-            sum += i;
-            // sum += interger[i]
-            console.log(sum)
-        }
-        //  let sum = Number(n) + 2;
-        // let sum = Number(n) * (Number(n)+1) / 2;
-        // if ((sum%3) || (sum%5)){
-        //     console.log(sum);
-        //     return sum;
+//             sum += i;
+//             // sum += interger[i]
+//             console.log(sum)
+//         }
+//         //  let sum = Number(n) + 2;
+//         // let sum = Number(n) * (Number(n)+1) / 2;
+//         // if ((sum%3) || (sum%5)){
+//         //     console.log(sum);
+//         //     return sum;
 
-        } 
-    }
+//         } 
+//     }
         
 
-    )
+//     )
 
 
-
+function addOrMultiply(){
+    addBtn = document.querySelector('#add');
+    multiplyBtn = document.querySelector('#product');
+    // if(addBtn){
+    addBtn.addEventListener('click', function(){
+        userInput = document.querySelector("#inputName").value;
+        console.log(userInput);
+        let n = parseInt(userInput);
+        // console.log(n)
+        total = n * (n+1) / 2;
+        console.log(total);
+    })
+// } else if(multiplyBtn){
+    multiplyBtn.addEventListener('click', function(){
+        userInput = document.querySelector('#inputName').value;
+        let m = parseInt(userInput);
+        let total = 1;
+        for (let i = 1; i <= m; i++){
+            total *= i;
+            console.log(total);
+        }
+    })
+// }
+}
+addOrMultiply();
